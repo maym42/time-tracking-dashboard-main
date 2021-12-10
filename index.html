@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+
+<body>
+<main class= wrapper>
+  <section class="person-container">
+
+    <div class="profile">
+      <figure id="avatar"></figure>
+      
+      <div class="profile-text">
+        <span>Report for</span>
+        <h1>Jeremy Robson</h1>
+      </div>
+    </div>
+
+    <nav class="time">
+      <ul class="time-nav">
+        <li class="btn" id="daily">Daily</li>
+        <li class="btn" id="Weekly">Weekly</li>
+        <li class="btn" id="Monthly">Monthly</li>
+      </ul>
+    </nav>
+    
+  </section>
+
+<!--CARDS-->
+
+  <section class="allCards">
+
+    <section class="card-container">
+      <figure class="icon"></figure>
+      <div class="card-content">
+
+        <header class="card-header">
+          <h1 class="title"></h1>
+          <figure class="three-dots"></figure>
+        </header>
+
+        <div class="card-times">
+          <p class="current"></p>
+          <p class="prev"></p>
+        </div>
+
+      </div>
+    </section>
+
+  </section>
+</main>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/maym42" target="_blank">Maayan</a>.
+  </footer>
+
+  <script type="module" src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+:root {
+  /* ### Primary*/
+  --Blue: hsl(246, 80%, 60%);
+  --Light-red-work: hsl(15, 100%, 70%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green-exercise: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --Soft-orange-self-care: hsl(43, 84%, 65%);
+  /*### Neutral*/
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+}
+/*------- GENERAL -------*/
+h1,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+figure {
+  margin: 0;
+}
+body {
+  background-color: var(--Very-dark-blue);
+  font-family: "Rubik", sans-serif;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 80px;
+}
+
+/*------- PERSON PROFILE -------*/
+.person-container {
+  border-radius: 15px;
+  background-color: var(--Dark-blue);
+  /*position*/
+  position: relative;
+  /*text*/
+  color: white;
+  /*space*/
+  margin-bottom: 24px;
+}
+.profile {
+  z-index: 1;
+  background-color: var(--Blue);
+  border-radius: 15px;
+  /*flex*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*space*/
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#avatar {
+  border-radius: 50%;
+  border: 3px solid white;
+  /*size*/
+  width: 70px;
+  height: 70px;
+  /*image*/
+  background-image: url("../images/image-jeremy.png");
+  background-size: contain;
+  background-position: center;
+  /*space*/
+  margin-left: 30px;
+}
+.profile-text {
+  margin-left: 18px;
+}
+.profile-text h1 {
+  /*text*/
+  font-weight: 300;
+  font-size: 25px;
+}
+.profile-text span {
+  /*text*/
+  font-weight: 300;
+  font-size: 14px;
+  /*space*/
+  margin-bottom: 8px;
+}
+/*~ mini nav ~*/
+.time-nav {
+  list-style-type: none;
+  /*flex*/
+  display: flex;
+  flex-direction: row;
+  /*space*/
+  padding-left: 30px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+#daily,
+#Weekly,
+#Monthly {
+  cursor: pointer;
+  /*text*/
+  color: var(--Desaturated-blue);
+  /*space*/
+  margin-right: 60px;
+  /*transition*/
+  transition-duration: 450ms;
+  transition-property: color;
+}
+#daily:hover,
+#Weekly:hover,
+#Monthly:hover {
+  color: white !important;
+}
+
+/*------- CARD --------*/
+.card-container {
+  background-color: var(--Blue);
+  border-radius: 10px;
+  /*space*/
+  margin-bottom: 24px;
+}
+.icon {
+  /*size*/
+  width: 81px;
+  /* height: 100px;*/
+  height: 38px;
+  /*image*/
+  background-image: url(../images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*space*/
+  margin-right: 20px;
+  margin-left: auto;
+}
+.card-content {
+  color: white;
+  border-radius: 10px;
+  background-color: var(--Dark-blue);
+  z-index: 1;
+  /*space*/
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 34px;
+  /*transition*/
+  transition-duration: 450ms;
+  transition-property: background-color;
+}
+.card-content:hover {
+  background-color: #34397b;
+}
+/*~mini header~*/
+.card-header {
+  /*flex*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*space*/
+  margin-bottom: 15px;
+}
+.title {
+  /*text*/
+  font-size: 16px;
+  font-weight: 500;
+}
+.three-dots {
+  /*size*/
+  width: 21px;
+  height: 5px;
+  /*image*/
+  background-image: url(../images/icon-ellipsis.svg);
+  margin-left: auto;
+  /*transition*/
+  transition-duration: 1000ms;
+  transition-property: filter;
+}
+
+.three-dots:hover {
+  cursor: pointer;
+  filter: brightness(200%);
+}
+
+.card-times {
+  /*flex*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fade-in-effect {
+  /*animation*/
+  animation-name: fade-in;
+  animation-duration: 1000ms;
+}
+.current {
+  font-size: 25px;
+  font-weight: 300;
+}
+.prev {
+  color: var(--Pale-Blue);
+}
+/*------- FRONTEND MENTOR --------*/
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  color: var(--Blue);
+}
+.attribution a:hover {
+  color: var(--Blue);
+  text-decoration: none;
+}
+/*~~~~~~animation~~~~~~*/
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*~~~~~~~~~~~~~~desktop~~~~~~~~~~~~~~~~~~*/
+@media only screen and (min-width: 1025px) and (min-height: 620px) {
+  body {
+    margin: 0;
+    /*flex*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .person-container {
+    /*flex*/
+    align-self: stretch;
+    /*space*/
+    margin-right: 30px;
+    margin-bottom: 0;
+    /*size*/
+    width: 255px;
+    box-sizing: border-box;
+  }
+  .profile {
+    /*flex*/
+    flex-direction: column;
+    align-items: flex-start;
+    /*space*/
+    padding: 0;
+  }
+  #avatar {
+    /*size*/
+    width: 75px;
+    height: 75px;
+    /*space*/
+    margin-left: 30px;
+    margin-top: 33px;
+    margin-bottom: 30px;
+  }
+  .profile-text {
+    margin-left: 30px;
+  }
+
+  .profile-text h1 {
+    /*text*/
+    font-size: 34px;
+    margin-top: 8px;
+    margin-bottom: 87px;
+  }
+  .icon {
+    height: 45px;
+  }
+  .time-nav {
+    /*flex*/
+    flex-direction: column;
+    /*space*/
+    padding: 0;
+    padding-top: 26px;
+    margin: 0;
+    margin-left: 34px;
+  }
+
+  #daily,
+  #Weekly,
+  #Monthly {
+    font-size: 16px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .allCards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+  }
+
+  .card-container {
+    /*space*/
+    margin-bottom: 0;
+    width: 255px;
+    height: max-content;
+    box-sizing: border-box;
+  }
+
+  .card-times {
+    /*flex*/
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .current {
+    font-size: 48px;
+    margin-bottom: 14px;
+  }
+  .prev {
+    font-size: 14px;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 20px;
+  }
+} /*end media*/
