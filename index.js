@@ -53,12 +53,12 @@ let colors = [
 ];
 
 /*icons */
-let iconWork = "url(../images/icon-work.svg)";
-let iconPlay = "url(../images/icon-play.svg)";
-let iconStudy = "url(../images/icon-study.svg)";
-let iconExercise = "url(../images/icon-exercise.svg)";
-let iconSocial = "url(../images/icon-social.svg)";
-let iconSelfCare = "url(../images/icon-self-care.svg)";
+let iconWork = "url(images/icon-work.svg)";
+let iconPlay = "url(images/icon-play.svg)";
+let iconStudy = "url(images/icon-study.svg)";
+let iconExercise = "url(images/icon-exercise.svg)";
+let iconSocial = "url(images/icon-social.svg)";
+let iconSelfCare = "url(images/icon-self-care.svg)";
 let icons = [
   iconWork,
   iconPlay,
